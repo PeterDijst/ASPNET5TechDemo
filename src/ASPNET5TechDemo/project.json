@@ -10,8 +10,11 @@
         "**.vspscc"
     ],
     "dependencies": {
+        "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta1",
+        "EntityFramework.Relational": "7.0.0-beta1",
+        "EntityFramework.SqlServer": "7.0.0-beta1",
         "EntityFramework": "7.0.0-beta1",
-		"Microsoft.AspNet.Diagnostics": "1.0.0-beta1",
+        "Microsoft.AspNet.Diagnostics": "1.0.0-beta1",
         "Microsoft.AspNet.Mvc": "6.0.0-beta1",
         "Microsoft.AspNet.Server.IIS": "1.0.0-beta1"
     },

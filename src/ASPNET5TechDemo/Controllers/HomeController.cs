@@ -7,9 +7,14 @@ namespace ASPNET5TechDemo.Controllers
 {
     public class HomeController : Controller
     {
+        private RegistrationDbContext context = new RegistrationDbContext();
+
         // GET: /<controller>/
         public IActionResult Index()
         {
+            context.Add<User> (new User() { FirstName = "Piet", LastName = "Snot" });
+            context.SaveChanges();
+
             var u = new User() { FirstName = "Piet", LastName = "Snot" };
             return View(u);
         }
